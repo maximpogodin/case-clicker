@@ -60,3 +60,7 @@ crashlytics-build.properties
 
 .vsconfig
 UpgradeLog.htm
+*.asset
+
+#ProjectSettings ignore
+ProjectSettings/
