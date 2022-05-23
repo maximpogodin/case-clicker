@@ -65,3 +65,4 @@ UpgradeLog.htm
 #ProjectSettings ignore
 ProjectSettings/
 UserSettings/
+.vscode/settings.json
