@@ -229,7 +229,7 @@ GameObject:
   - component: {fileID: 272667669}
   - component: {fileID: 272667668}
   m_Layer: 5
-  m_Name: CrystalText
+  m_Name: TextCrystal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -309,7 +309,7 @@ GameObject:
   - component: {fileID: 352282044}
   - component: {fileID: 352282043}
   m_Layer: 5
-  m_Name: CoinText
+  m_Name: TextCoin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1203,6 +1203,9 @@ MonoBehaviour:
   clickPower: 1
   Z: 5
   rotation: 75
+  textCoin: {fileID: 352282043}
+  textStone: {fileID: 1393671140}
+  textCrystal: {fileID: 272667668}
 --- !u!114 &853759739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2321,7 +2324,7 @@ GameObject:
   - component: {fileID: 1393671141}
   - component: {fileID: 1393671140}
   m_Layer: 5
-  m_Name: StoneText
+  m_Name: TextStone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

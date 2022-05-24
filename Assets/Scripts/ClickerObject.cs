@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class ClickerObject : MonoBehaviour, IPointerClickHandler
 {
@@ -13,6 +14,12 @@ public class ClickerObject : MonoBehaviour, IPointerClickHandler
     public float Z;
     public float rotation;
 
+    public Text textCoin;
+    public Text textStone;
+    public Text textCrystal;
+
+    private float coins;
+
     private void Awake() 
     {
         clickProgression = FindObjectOfType<ClickProgression>();
@@ -22,11 +29,14 @@ public class ClickerObject : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
+        float randomSize = Random.RandomRange(0.5f, 1f);
+        Vector3 randomScale = new Vector3(randomSize, randomSize, randomSize);
+        Vector3 randomPosition = new Vector3(Random.RandomRange(-10f, 10f), Random.RandomRange(5f, 10f), Random.RandomRange(-10f, 10f));
+
         Vector3 particlePosition = Input.mousePosition;
         particlePosition.z = Z;
         particlePosition = Camera.main.ScreenToWorldPoint(particlePosition);
 
-        Vector3 randomPosition = new Vector3(Random.RandomRange(-10f, 10f), Random.RandomRange(5f, 10f), Random.RandomRange(-10f, 10f));
         var particleClone = Instantiate(particlePrefab, particlePosition, Quaternion.identity);
         particleClone.GetComponent<Rigidbody>().AddForce(randomPosition * particleDropForce);
         Destroy(particleClone, 1f);
@@ -37,8 +47,17 @@ public class ClickerObject : MonoBehaviour, IPointerClickHandler
         rotation = randomPosition.x <= 0f ? rotation : -rotation;
         textClickDamageClone.GetComponent<Rigidbody2D>().AddTorque(rotation);
         textClickDamageClone.transform.SetAsFirstSibling();
+        textClickDamageClone.transform.localScale = randomScale;
         Destroy(textClickDamageClone, 1f);
 
+        coins += clickPower;
         clickProgression.IncreaseSlider(clickPower);
+
+        UpdateCoinText();
+    }
+
+    private void UpdateCoinText()
+    {
+        textCoin.text = coins.ToString();
     }
 }
