@@ -8,7 +8,7 @@ public class ClickerObject : MonoBehaviour, IPointerClickHandler
     private Click _click;
 
     [Header("Other")]
-    public GameObject ui;
+    private GameObject _ui;
     private ClickProgressionObject _clickProgression;
     private GameObject particlePrefab;
     private ClickParticle _clickParticlePrefab;
@@ -21,6 +21,7 @@ public class ClickerObject : MonoBehaviour, IPointerClickHandler
 
     private void Awake() 
     {
+        _ui = GameObject.FindGameObjectWithTag("UI");
         _gameManager = FindObjectOfType<GameManager>();
         _clickProgression = FindObjectOfType<ClickProgressionObject>();
         particlePrefab = Resources.Load<GameObject>("Prefabs/particlePrefab");
@@ -57,7 +58,7 @@ public class ClickerObject : MonoBehaviour, IPointerClickHandler
         particleClone.GetComponent<Rigidbody>().AddForce(randomPosition * particleDropForce);
         Destroy(particleClone, 1f);
 
-        var clickParticleClone = Instantiate(_clickParticlePrefab, ui.transform);
+        var clickParticleClone = Instantiate(_clickParticlePrefab, _ui.transform);
         clickParticleClone.transform.position = eventData.position;
         clickParticleClone.GetComponent<Rigidbody2D>().AddForce(randomPosition * textClickDropForce);
         rotation = randomPosition.x <= 0f ? rotation : -rotation;
