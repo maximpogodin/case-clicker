@@ -3,10 +3,9 @@ using UnityEngine.EventSystems;
 
 public class ClickerObject : MonoBehaviour, IPointerClickHandler
 {
-    private Click _click;
     [Header("Stats values")]
     [SerializeField]
-    private float _clickPower;
+    private Click _click;
 
     [Header("Other")]
     public GameObject ui;
@@ -22,7 +21,7 @@ public class ClickerObject : MonoBehaviour, IPointerClickHandler
 
     private void Awake() 
     {
-        _click = new Click(_clickPower);
+        //_click = new Click();
 
         _gameManager = FindObjectOfType<GameManager>();
         _clickProgression = FindObjectOfType<ClickProgression>();
@@ -54,6 +53,6 @@ public class ClickerObject : MonoBehaviour, IPointerClickHandler
         Destroy(clickParticleClone, 1f);
 
         _clickProgression.IncreaseSlider(_click.ClickPower);
-        _gameManager.IncreaseResourceValue(ResourceType.Stone, _click.ClickPower);
+        _gameManager.IncreaseResourceValue(ResourceType.Stone, _click.ClickPower * _click.ClickMultiplier);
     }
 }

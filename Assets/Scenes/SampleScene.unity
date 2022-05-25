@@ -1941,7 +1941,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 717ad1a51cf447e4e9ec9d1ab722ef30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _clickPower: 1
+  _click:
+    ClickPower: 1
+    ClickMultiplier: 1
   ui: {fileID: 1738276572}
   textClickDropForce: 5000
   particleDropForce: 20
