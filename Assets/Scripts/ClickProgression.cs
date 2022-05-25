@@ -5,13 +5,17 @@ using UnityEngine.UI;
 public class ClickProgression : MonoBehaviour
 {
     private Slider slider;
-    public int progressionMaxValue = 100;
-    public float smoothTime = 1f;
+
+    [Header("Progression settings")]
+    [SerializeField]
+    private int _progressionMaxValue = 100;
+    [SerializeField]
+    private float _smoothDuration = 1f;
 
     private void Awake() 
     {
         slider = GetComponent<Slider>();
-        slider.maxValue = progressionMaxValue;
+        slider.maxValue = _progressionMaxValue;
         slider.value = 0;
     }
 
@@ -30,9 +34,9 @@ public class ClickProgression : MonoBehaviour
 
         float elapsedTime = 0f;
 
-        while (elapsedTime < smoothTime)
+        while (elapsedTime < _smoothDuration)
         {
-            slider.value = Mathf.Lerp(curValue, nextValue, elapsedTime / smoothTime);
+            slider.value = Mathf.Lerp(curValue, nextValue, elapsedTime / _smoothDuration);
             elapsedTime += Time.deltaTime;
 
             yield return null;

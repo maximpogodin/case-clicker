@@ -1,28 +1,31 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.UI;
 
 public class ClickerObject : MonoBehaviour, IPointerClickHandler
 {
+    private Click _click;
+    [Header("Stats values")]
+    [SerializeField]
+    private float _clickPower;
+
+    [Header("Other")]
     public GameObject ui;
-    private ClickProgression clickProgression;
+    private ClickProgression _clickProgression;
     private GameObject particlePrefab;
     private GameObject textClickDamagePrefab;
     public float textClickDropForce;
     public float particleDropForce;
-    public float clickPower = 1f;
     public float Z;
     public float rotation;
 
-    public Text textCoin;
-    public Text textStone;
-    public Text textCrystal;
-
-    private float coins;
+    private GameManager _gameManager;
 
     private void Awake() 
     {
-        clickProgression = FindObjectOfType<ClickProgression>();
+        _click = new Click(_clickPower);
+
+        _gameManager = FindObjectOfType<GameManager>();
+        _clickProgression = FindObjectOfType<ClickProgression>();
         particlePrefab = Resources.Load<GameObject>("Prefabs/particlePrefab");
         textClickDamagePrefab = Resources.Load<GameObject>("Prefabs/textClickDamagePrefab");
     }
@@ -50,14 +53,7 @@ public class ClickerObject : MonoBehaviour, IPointerClickHandler
         textClickDamageClone.transform.localScale = randomScale;
         Destroy(textClickDamageClone, 1f);
 
-        coins += clickPower;
-        clickProgression.IncreaseSlider(clickPower);
-
-        UpdateCoinText();
-    }
-
-    private void UpdateCoinText()
-    {
-        textCoin.text = coins.ToString();
+        _clickProgression.IncreaseSlider(_click.ClickPower);
+        _gameManager.IncreaseResourceValue(ResourceType.Stone, _click.ClickPower);
     }
 }
