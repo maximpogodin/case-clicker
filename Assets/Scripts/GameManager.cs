@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
         Resource resource = _gameStats.GetResource(resourceType);
         resource.InreaseValue(value);
 
-        UpdateResourceText(resourceType, resource.ToString());
+        UpdateResourceText(resourceType, ValueFormatter.GetFormattedValue(resource.GetValue()));
     }
 
     public void UpdateResourceText(ResourceType resourceType, string text)

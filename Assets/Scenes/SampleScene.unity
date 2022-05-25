@@ -2842,6 +2842,22 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1261128671092476956, guid: 675474b3787a00b47a1e6b335658cea6, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1261128671092476956, guid: 675474b3787a00b47a1e6b335658cea6, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2004164069}
+    - target: {fileID: 1261128671092476956, guid: 675474b3787a00b47a1e6b335658cea6, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ValueChanged
+      objectReference: {fileID: 0}
+    - target: {fileID: 1261128671092476956, guid: 675474b3787a00b47a1e6b335658cea6, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ClickProgressionObject, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 1261128671092476957, guid: 675474b3787a00b47a1e6b335658cea6, type: 3}
       propertyPath: progressionMaxValue
       value: 100
@@ -2878,7 +2894,8 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1261128671092476957, guid: 675474b3787a00b47a1e6b335658cea6, type: 3}
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 675474b3787a00b47a1e6b335658cea6, type: 3}
 --- !u!1 &1160756504
@@ -3153,7 +3170,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 116, y: -32.3}
+  m_AnchoredPosition: {x: 116, y: -32.30005}
   m_SizeDelta: {x: 654.15967, y: 223.99998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1220587796
@@ -3231,7 +3248,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -116, y: -32.3}
+  m_AnchoredPosition: {x: -116, y: -32.30005}
   m_SizeDelta: {x: 654.15967, y: 223.99998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1240419635
@@ -9345,6 +9362,29 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c0dc82b07054f942a474cee8b27ce0d, type: 3}
+--- !u!1 &2004164066 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1261128671092476954, guid: 675474b3787a00b47a1e6b335658cea6, type: 3}
+  m_PrefabInstance: {fileID: 1129929624}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2004164069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2004164066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 943fc17fa11293d45838f1fb7651c795, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _clickProgression:
+    MaxValue: 10
+    IncrementSmoothDuration: 0.1
+    DecrementSmoothDuration: 1
+    IncrementMultiplier: 0.1
+  _inactionCooldown: 1
 --- !u!1 &2069454595
 GameObject:
   m_ObjectHideFlags: 0

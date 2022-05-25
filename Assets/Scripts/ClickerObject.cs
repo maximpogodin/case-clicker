@@ -3,15 +3,15 @@ using UnityEngine.EventSystems;
 
 public class ClickerObject : MonoBehaviour, IPointerClickHandler
 {
-    [Header("Stats values")]
+    [Header("Click settings")]
     [SerializeField]
     private Click _click;
 
     [Header("Other")]
     public GameObject ui;
-    private ClickProgression _clickProgression;
+    private ClickProgressionObject _clickProgression;
     private GameObject particlePrefab;
-    private GameObject _clickParticlePrefab;
+    private ClickParticle _clickParticlePrefab;
     public float textClickDropForce;
     public float particleDropForce;
     public float Z;
@@ -21,12 +21,26 @@ public class ClickerObject : MonoBehaviour, IPointerClickHandler
 
     private void Awake() 
     {
-        //_click = new Click();
-
         _gameManager = FindObjectOfType<GameManager>();
-        _clickProgression = FindObjectOfType<ClickProgression>();
+        _clickProgression = FindObjectOfType<ClickProgressionObject>();
         particlePrefab = Resources.Load<GameObject>("Prefabs/particlePrefab");
-        _clickParticlePrefab = Resources.Load<GameObject>("Prefabs/clickParticlePrefab");
+        _clickParticlePrefab = Resources.Load<ClickParticle>("Prefabs/clickParticlePrefab");
+    }
+
+    public float GetClickMultiplier()
+    {
+        return _click.ClickMultiplier;
+    }
+
+    public void IncreaseMultiplier(float value)
+    {
+        _click.ClickMultiplier += value;
+    }
+
+    public void DecreaseMultiplier()
+    {
+        if (_click.ClickMultiplier > 0f)
+            _click.ClickMultiplier -= 0.1f;
     }
 
     public void OnPointerClick(PointerEventData eventData)
@@ -50,7 +64,8 @@ public class ClickerObject : MonoBehaviour, IPointerClickHandler
         clickParticleClone.GetComponent<Rigidbody2D>().AddTorque(rotation);
         clickParticleClone.transform.SetAsFirstSibling();
         clickParticleClone.transform.localScale = randomScale;
-        Destroy(clickParticleClone, 1f);
+        clickParticleClone.UpdateText((_click.ClickPower * _click.ClickMultiplier).ToString("f1"));
+        Destroy(clickParticleClone.gameObject, 1f);
 
         _clickProgression.IncreaseSlider(_click.ClickPower);
         _gameManager.IncreaseResourceValue(ResourceType.Stone, _click.ClickPower * _click.ClickMultiplier);

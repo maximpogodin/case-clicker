@@ -25,8 +25,13 @@ public class Resource
         _value += value;
     }
 
+    public float GetValue()
+    {
+        return _value;
+    }
+
     public override string ToString()
     {
-        return _value.ToString();
+        return ValueFormatter.GetFormattedValue(_value);
     }
 }

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3364651136748217356}
   - component: {fileID: 2228085964343296595}
   - component: {fileID: -284656105807425219}
+  - component: {fileID: 601641306156797854}
   m_Layer: 5
   m_Name: clickParticlePrefab
   m_TagString: Untagged
@@ -100,6 +101,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &601641306156797854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285779612208636234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc769481825b0bc45b6ffcfe5de4cccc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1334889204410364272
 GameObject:
   m_ObjectHideFlags: 0
