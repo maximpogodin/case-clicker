@@ -7,6 +7,13 @@ public class Click
         set { _clickPower = value; }
     }
 
+    private float _clickMultiplier;
+    public float ClickMultiplier
+    {
+        get { return _clickMultiplier; }
+        set { _clickMultiplier = value; }
+    }
+
     public Click(float clickPower)
     {
         ClickPower = clickPower;
