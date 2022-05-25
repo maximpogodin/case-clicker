@@ -12,7 +12,7 @@ public class ClickerObject : MonoBehaviour, IPointerClickHandler
     public GameObject ui;
     private ClickProgression _clickProgression;
     private GameObject particlePrefab;
-    private GameObject textClickDamagePrefab;
+    private GameObject _clickParticlePrefab;
     public float textClickDropForce;
     public float particleDropForce;
     public float Z;
@@ -27,7 +27,7 @@ public class ClickerObject : MonoBehaviour, IPointerClickHandler
         _gameManager = FindObjectOfType<GameManager>();
         _clickProgression = FindObjectOfType<ClickProgression>();
         particlePrefab = Resources.Load<GameObject>("Prefabs/particlePrefab");
-        textClickDamagePrefab = Resources.Load<GameObject>("Prefabs/textClickDamagePrefab");
+        _clickParticlePrefab = Resources.Load<GameObject>("Prefabs/clickParticlePrefab");
     }
 
     public void OnPointerClick(PointerEventData eventData)
@@ -44,14 +44,14 @@ public class ClickerObject : MonoBehaviour, IPointerClickHandler
         particleClone.GetComponent<Rigidbody>().AddForce(randomPosition * particleDropForce);
         Destroy(particleClone, 1f);
 
-        var textClickDamageClone = Instantiate(textClickDamagePrefab, ui.transform);
-        textClickDamageClone.transform.position = eventData.position;
-        textClickDamageClone.GetComponent<Rigidbody2D>().AddForce(randomPosition * textClickDropForce);
+        var clickParticleClone = Instantiate(_clickParticlePrefab, ui.transform);
+        clickParticleClone.transform.position = eventData.position;
+        clickParticleClone.GetComponent<Rigidbody2D>().AddForce(randomPosition * textClickDropForce);
         rotation = randomPosition.x <= 0f ? rotation : -rotation;
-        textClickDamageClone.GetComponent<Rigidbody2D>().AddTorque(rotation);
-        textClickDamageClone.transform.SetAsFirstSibling();
-        textClickDamageClone.transform.localScale = randomScale;
-        Destroy(textClickDamageClone, 1f);
+        clickParticleClone.GetComponent<Rigidbody2D>().AddTorque(rotation);
+        clickParticleClone.transform.SetAsFirstSibling();
+        clickParticleClone.transform.localScale = randomScale;
+        Destroy(clickParticleClone, 1f);
 
         _clickProgression.IncreaseSlider(_click.ClickPower);
         _gameManager.IncreaseResourceValue(ResourceType.Stone, _click.ClickPower);
