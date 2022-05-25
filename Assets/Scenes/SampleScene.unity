@@ -418,9 +418,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eea3057530c3d3a43826263a58c21ff6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textCoin: {fileID: 352282043}
-  textStone: {fileID: 1393671140}
-  textCrystal: {fileID: 272667668}
+  textCoin: {fileID: 0}
+  textStone: {fileID: 0}
+  textCrystal: {fileID: 0}
 --- !u!4 &308698268
 Transform:
   m_ObjectHideFlags: 0
@@ -1944,7 +1944,6 @@ MonoBehaviour:
   _click:
     ClickPower: 1
     ClickMultiplier: 1
-  ui: {fileID: 1738276572}
   textClickDropForce: 5000
   particleDropForce: 20
   Z: 5
@@ -4178,7 +4177,7 @@ GameObject:
   - component: {fileID: 1738276573}
   m_Layer: 5
   m_Name: UI
-  m_TagString: UI
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

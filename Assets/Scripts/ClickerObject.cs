@@ -11,7 +11,7 @@ public class ClickerObject : MonoBehaviour, IPointerClickHandler
     private GameObject _ui;
     private ClickProgressionObject _clickProgression;
     private GameObject particlePrefab;
-    private ClickParticle _clickParticlePrefab;
+    private GameObject _clickParticlePrefab;
     public float textClickDropForce;
     public float particleDropForce;
     public float Z;
@@ -21,11 +21,11 @@ public class ClickerObject : MonoBehaviour, IPointerClickHandler
 
     private void Awake() 
     {
-        _ui = GameObject.FindGameObjectWithTag("UI");
+        _ui = GameObject.Find("UI");
         _gameManager = FindObjectOfType<GameManager>();
         _clickProgression = FindObjectOfType<ClickProgressionObject>();
         particlePrefab = Resources.Load<GameObject>("Prefabs/particlePrefab");
-        _clickParticlePrefab = Resources.Load<ClickParticle>("Prefabs/clickParticlePrefab");
+        _clickParticlePrefab = Resources.Load<GameObject>("Prefabs/clickParticlePrefab");
     }
 
     public float GetClickMultiplier()
@@ -59,13 +59,14 @@ public class ClickerObject : MonoBehaviour, IPointerClickHandler
         Destroy(particleClone, 1f);
 
         var clickParticleClone = Instantiate(_clickParticlePrefab, _ui.transform);
+        clickParticleClone.gameObject.AddComponent<ClickParticle>();
         clickParticleClone.transform.position = eventData.position;
         clickParticleClone.GetComponent<Rigidbody2D>().AddForce(randomPosition * textClickDropForce);
         rotation = randomPosition.x <= 0f ? rotation : -rotation;
         clickParticleClone.GetComponent<Rigidbody2D>().AddTorque(rotation);
         clickParticleClone.transform.SetAsFirstSibling();
         clickParticleClone.transform.localScale = randomScale;
-        clickParticleClone.UpdateText((_click.ClickPower * _click.ClickMultiplier).ToString("f1"));
+        clickParticleClone.GetComponent<ClickParticle>().UpdateText((_click.ClickPower * _click.ClickMultiplier).ToString("f1"));
         Destroy(clickParticleClone.gameObject, 1f);
 
         _clickProgression.IncreaseSlider(_click.ClickPower);
