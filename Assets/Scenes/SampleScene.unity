@@ -2857,7 +2857,7 @@ PrefabInstance:
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: ClickProgressionObject, Assembly-CSharp
       objectReference: {fileID: 0}
-    - target: {fileID: 1261128671092476957, guid: 675474b3787a00b47a1e6b335658cea6, type: 3}
+    - target: {fileID: 0}
       propertyPath: progressionMaxValue
       value: 100
       objectReference: {fileID: 0}
@@ -2893,8 +2893,7 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1261128671092476957, guid: 675474b3787a00b47a1e6b335658cea6, type: 3}
+    m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 675474b3787a00b47a1e6b335658cea6, type: 3}
 --- !u!1 &1160756504

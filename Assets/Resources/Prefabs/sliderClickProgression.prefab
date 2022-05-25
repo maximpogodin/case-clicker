@@ -86,7 +86,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1261128671092476955}
   - component: {fileID: 1261128671092476956}
-  - component: {fileID: 1261128671092476957}
   m_Layer: 5
   m_Name: sliderClickProgression
   m_TagString: Untagged
@@ -168,7 +167,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1261128671092476957}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ClickProgression, Assembly-CSharp
         m_MethodName: ValueChanged
         m_Mode: 1
@@ -180,20 +179,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1261128671092476957
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1261128671092476954}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 943fc17fa11293d45838f1fb7651c795, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  progressionMaxValue: 10
-  smoothTime: 0.1
 --- !u!1 &1261128671312936929
 GameObject:
   m_ObjectHideFlags: 0
