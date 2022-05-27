@@ -8,7 +8,8 @@ public class ClickerObject : MonoBehaviour, IPointerClickHandler
     private Click _click;
 
     [Header("Other")]
-    private GameObject _ui;
+    [SerializeField]
+    private Transform _parent;
     private ClickProgressionObject _clickProgression;
     private GameObject particlePrefab;
     private GameObject _clickParticlePrefab;
@@ -21,7 +22,6 @@ public class ClickerObject : MonoBehaviour, IPointerClickHandler
 
     private void Awake() 
     {
-        _ui = GameObject.Find("UI");
         _gameManager = FindObjectOfType<GameManager>();
         _clickProgression = FindObjectOfType<ClickProgressionObject>();
         particlePrefab = Resources.Load<GameObject>("Prefabs/particlePrefab");
@@ -58,15 +58,19 @@ public class ClickerObject : MonoBehaviour, IPointerClickHandler
         particleClone.GetComponent<Rigidbody>().AddForce(randomPosition * particleDropForce);
         Destroy(particleClone, 1f);
 
-        var clickParticleClone = Instantiate(_clickParticlePrefab, _ui.transform);
-        clickParticleClone.gameObject.AddComponent<ClickParticle>();
+        var clickParticleClone = Instantiate(_clickParticlePrefab, _parent);
         clickParticleClone.transform.position = eventData.position;
-        clickParticleClone.GetComponent<Rigidbody2D>().AddForce(randomPosition * textClickDropForce);
+
+        Rigidbody2D rb = clickParticleClone.GetComponent<Rigidbody2D>();
+        rb.AddForce(randomPosition * textClickDropForce);
         rotation = randomPosition.x <= 0f ? rotation : -rotation;
-        clickParticleClone.GetComponent<Rigidbody2D>().AddTorque(rotation);
+        rb.AddTorque(rotation);
+
         clickParticleClone.transform.SetAsFirstSibling();
         clickParticleClone.transform.localScale = randomScale;
+
         clickParticleClone.GetComponent<ClickParticle>().UpdateText((_click.ClickPower * _click.ClickMultiplier).ToString("f1"));
+
         Destroy(clickParticleClone.gameObject, 1f);
 
         _clickProgression.IncreaseSlider(_click.ClickPower);
