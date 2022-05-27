@@ -164,9 +164,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 709
-        y: 3608
-        width: 225
-        height: 251
+        y: 3584
+        width: 230
+        height: 283
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,8 +226,8 @@ TextureImporter:
       name: UI_5
       rect:
         serializedVersion: 2
-        x: 1863
-        y: 3548
+        x: 1865
+        y: 3557
         width: 302
         height: 320
       alignment: 0
@@ -286,53 +286,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_8
-      rect:
-        serializedVersion: 2
-        x: 329
-        y: 2475
-        width: 949
-        height: 752
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ee010212c320fcc42b02a8535110edfe
-      internalID: -853916091
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI_9
-      rect:
-        serializedVersion: 2
-        x: 1397
-        y: 2477
-        width: 949
-        height: 752
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 807facf09d6ff4548a689c60a7383561
-      internalID: 891120683
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: UI_10
       rect:
         serializedVersion: 2
-        x: 4125
-        y: 2534
+        x: 4146
+        y: 2667
         width: 605
         height: 605
       alignment: 0
@@ -352,8 +310,8 @@ TextureImporter:
       name: UI_11
       rect:
         serializedVersion: 2
-        x: 519
-        y: 1645
+        x: 3457
+        y: 2661
         width: 605
         height: 608
       alignment: 0
@@ -373,10 +331,10 @@ TextureImporter:
       name: UI_12
       rect:
         serializedVersion: 2
-        x: 1578
-        y: 231
-        width: 3190
-        height: 2128
+        x: 89
+        y: 106
+        width: 4845
+        height: 2479
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -394,8 +352,8 @@ TextureImporter:
       name: UI_13
       rect:
         serializedVersion: 2
-        x: 519
-        y: 971
+        x: 2766
+        y: 2663
         width: 605
         height: 608
       alignment: 0
@@ -415,8 +373,8 @@ TextureImporter:
       name: UI_14
       rect:
         serializedVersion: 2
-        x: 519
-        y: 297
+        x: 2076
+        y: 2662
         width: 605
         height: 608
       alignment: 0
