@@ -44,6 +44,7 @@ public class TabControl : MonoBehaviour
             tabPages[currentPageIndex].ShowOrHidePage();
         }
 
+        //open page
         currentPageIndex = index;
         tabPages[currentPageIndex].ShowOrHidePage();
     }

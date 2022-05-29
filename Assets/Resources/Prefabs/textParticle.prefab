@@ -89,8 +89,9 @@ GameObject:
   - component: {fileID: 8163920554709765803}
   - component: {fileID: 1417333005318938053}
   - component: {fileID: 8019489644802417105}
+  - component: {fileID: 9203725712082917850}
   m_Layer: 5
-  m_Name: clickParticlePrefab
+  m_Name: textParticle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -189,6 +190,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc769481825b0bc45b6ffcfe5de4cccc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _text: {fileID: 3402009120798118712}
+  dropForce: 50
+  dropRotation: 25
+--- !u!95 &9203725712082917850
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7804906479402986930}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 88ff9837c7ffdbc4ab9bf29dfba5abab, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &9016673423898262920
 GameObject:
   m_ObjectHideFlags: 0
