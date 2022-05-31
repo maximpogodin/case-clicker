@@ -159,6 +159,174 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: UI 4_2
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 1716
+        width: 366
+        height: 284
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bae15c632a96f6488ff687dde48b06b
+      internalID: 1521676710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI 4_3
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 1716
+        width: 366
+        height: 284
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 740fa9b80a8f5784b90ecbf8f005d38f
+      internalID: 1504488987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI 4_4
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 1344
+        width: 228
+        height: 228
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34f2a182d734d1a4ab0a3c357374117f
+      internalID: -1385508993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI 4_5
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 1330
+        width: 255
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c230f7da3201acc488fc442a917329b2
+      internalID: 1679370054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI 4_6
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 905
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cb5d47c1f0da4f498528ed32eff313e
+      internalID: 2056158288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI 4_7
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 905
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d98e20c4979af44ca4c42c63a7abead
+      internalID: -1730887386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI 4_8
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 385
+        width: 1408
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 399dd042d1c9e8f44a77b0d57ce262e1
+      internalID: 1942323017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI 4_9
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 61
+        width: 1408
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ce0b314d2bb71247b5b48c9977adbf9
+      internalID: 2119321868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -170,8 +338,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      UI 4_9: 2119321868
+      UI 4_3: 1504488987
       UI 4_0: -1958342997
+      UI 4_8: 1942323017
+      UI 4_6: 2056158288
       UI 4_1: 277673752
+      UI 4_5: 1679370054
+      UI 4_4: -1385508993
+      UI 4_2: 1521676710
+      UI 4_7: -1730887386
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 
