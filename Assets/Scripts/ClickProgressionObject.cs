@@ -102,7 +102,7 @@ public class ClickProgressionObject : MonoBehaviour
 
             slider.value -= 1f;
 
-            if (_clickerObject.GetClickMultiplier() > 1f)
+            if (_clickerObject.Click.ClickMultiplier > 1f)
             {
                 if (slider.value <= 0f)
                 {

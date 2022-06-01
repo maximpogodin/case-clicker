@@ -1,11 +1,11 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class ClickerObject : MonoBehaviour, IPointerClickHandler
 {
     [Header("Click settings")]
-    [SerializeField]
-    private Click _click;
+    public Click Click;
 
     [Header("Other")]
     [SerializeField]
@@ -20,42 +20,41 @@ public class ClickerObject : MonoBehaviour, IPointerClickHandler
     private Camera _mainCamera;
 
     [SerializeField]
-    private Transform _stoneTransform;
-    private Vector3 _stonePosition;
+    private Transform _textParticleTransform;
 
     private Vector3 _textParticlePosition;
 
     [SerializeField]
     private Transform _textParticleParent;
 
+    [SerializeField]
+    private Text _comboText;
+
     private void Awake() 
     {
         _mainCamera = Camera.main;
-        _stonePosition = _stoneTransform.position;
-
-        _textParticlePosition = _mainCamera.WorldToScreenPoint(_stonePosition);
-
         _gameManager = FindObjectOfType<GameManager>();
         _clickProgression = FindObjectOfType<ClickProgressionObject>();
-
-        //particlePrefab = Resources.Load<GameObject>("Prefabs/particlePrefab");
-        //_clickParticlePrefab = Resources.Load<GameObject>("Prefabs/clickParticlePrefab");
     }
 
-    public float GetClickMultiplier()
+    private void Start()
     {
-        return _click.ClickMultiplier;
+        _textParticlePosition = _mainCamera.WorldToScreenPoint(_textParticleTransform.position);
     }
 
     public void IncreaseMultiplier(float value)
     {
-        _click.ClickMultiplier += value;
+        Click.ClickMultiplier += value;
+        _comboText.text = $"x{ValueFormatter.GetFormattedValue(Click.ClickMultiplier)}";
     }
 
     public void DecreaseMultiplier()
     {
-        if (_click.ClickMultiplier > 0f)
-            _click.ClickMultiplier -= 0.1f;
+        if (Click.ClickMultiplier > 0f)
+        {
+            Click.ClickMultiplier -= 0.1f;
+            _comboText.text = $"x{ValueFormatter.GetFormattedValue(Click.ClickMultiplier)}";
+        }
     }
 
     public void OnPointerClick(PointerEventData eventData)
@@ -71,7 +70,7 @@ public class ClickerObject : MonoBehaviour, IPointerClickHandler
             textParticle.transform.rotation = Quaternion.identity;
             textParticle.gameObject.transform.localScale = randomScale;
             textParticle.ShowTextParticle();
-            textParticle.UpdateText(ValueFormatter.GetFormattedValue(_click.ClickPower * _click.ClickMultiplier));
+            textParticle.UpdateText(ValueFormatter.GetFormattedValue(Click.ClickPower * Click.ClickMultiplier));
         }
 
         //var particleClone = Instantiate(particlePrefab, particlePosition, Quaternion.identity);
@@ -93,7 +92,7 @@ public class ClickerObject : MonoBehaviour, IPointerClickHandler
 
         //Destroy(clickParticleClone.gameObject, 1f);
 
-        _clickProgression.IncreaseSlider(_click.ClickPower);
-        _gameManager.IncreaseResourceValue(ResourceType.Stone, _click.ClickPower * _click.ClickMultiplier);
+        _clickProgression.IncreaseSlider(Click.ClickPower);
+        _gameManager.IncreaseResourceValue(ResourceType.Stone, Click.ClickPower * Click.ClickMultiplier);
     }
 }

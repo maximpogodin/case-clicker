@@ -16,10 +16,6 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         _gameStats = new GameStats();
-
-        textCoin = GameObject.Find("TextCoin").GetComponent<Text>();
-        textStone = GameObject.Find("TextStone").GetComponent<Text>();
-        textCrystal = GameObject.Find("TextCrystal").GetComponent<Text>();
     }
 
     public void IncreaseResourceValue(ResourceType resourceType, float value)
