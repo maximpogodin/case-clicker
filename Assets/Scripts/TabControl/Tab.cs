@@ -8,7 +8,7 @@ public class Tab : MonoBehaviour
 
     private void Awake()
     {
-        tabControl = FindObjectOfType<TabControl>();
+        tabControl = transform.parent.parent.GetComponent<TabControl>();
         tabIndex = tabControl.GetTabIndex(this);
         GetComponent<Button>().onClick.AddListener(ShowPage);
     }

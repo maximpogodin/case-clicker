@@ -1,7 +1,6 @@
 using System;
 using UnityEngine;
 using UnityEngine.UI;
-using System.Linq;
 
 public class TabControl : MonoBehaviour
 {
@@ -10,16 +9,25 @@ public class TabControl : MonoBehaviour
     [SerializeField]
     private Tab[] tabs;
 
-    private int currentPageIndex;
-
     private void Awake()
     {
-        Disable();
-        currentPageIndex = -1;
+        if (GetComponent<Button>() != null)
+            GetComponent<Button>().onClick.AddListener(Close);
 
-        foreach (TabPage item in tabPages)
+        for (int i = 0; i < tabPages.Length; i++)
         {
-            item.gameObject.SetActive(true);
+            tabPages[i].gameObject.SetActive(tabPages[i].IsStartPage);
+        }
+    }
+
+    public void Close()
+    {
+        for (int i = 0; i < tabPages.Length; i++)
+        {
+            if (tabPages[i].gameObject.activeSelf)
+            {
+                tabPages[i].ShowOrHidePage();
+            }
         }
     }
 
@@ -30,32 +38,20 @@ public class TabControl : MonoBehaviour
 
     public void ShowPage(int index)
     {
-        //close current page
-        if (currentPageIndex == index)
+        tabPages[index].ShowOrHidePage();
+        //tabPages[index].IsShowed = true;
+
+        //tabPages[index].ShowOrHidePage();
+
+        for (int i = 0; i < tabPages.Length; i++)
         {
-            tabPages[currentPageIndex].ShowOrHidePage();
-            currentPageIndex = -1;
-            return;
+            if (i != index)
+            {
+                if (tabPages[i].gameObject.activeSelf)
+                {
+                    tabPages[i].ShowOrHidePage();
+                }
+            }
         }
-
-        //close already opened page, if exists
-        if (currentPageIndex != index && currentPageIndex != -1)
-        {
-            tabPages[currentPageIndex].ShowOrHidePage();
-        }
-
-        //open page
-        currentPageIndex = index;
-        tabPages[currentPageIndex].ShowOrHidePage();
-    }
-
-    public void Disable()
-    {
-        GetComponent<Image>().enabled = false;
-    }
-
-    public void Enable()
-    {
-        GetComponent<Image>().enabled = true;
     }
 }
