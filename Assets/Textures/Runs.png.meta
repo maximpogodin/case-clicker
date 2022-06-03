@@ -68,7 +68,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -180,6 +180,69 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Runs_3
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 2371
+        width: 565
+        height: 585
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c8314ab3a337a8488c7303d04cad5f1
+      internalID: 1349861712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runs_4
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 2372
+        width: 565
+        height: 585
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7cd69bad454cfc4d9b95da8ab7728bb
+      internalID: 1963720236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runs_5
+      rect:
+        serializedVersion: 2
+        x: 1880
+        y: 2372
+        width: 565
+        height: 585
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fef2f523ef37b7459092d759eca578b
+      internalID: -2102700853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -192,8 +255,11 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Runs_1: 1811643045
+      Runs_4: 1963720236
       Runs_2: 96204152
       Runs_0: 629533853
+      Runs_5: -2102700853
+      Runs_3: 1349861712
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 
