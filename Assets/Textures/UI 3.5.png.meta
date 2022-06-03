@@ -121,7 +121,7 @@ TextureImporter:
       name: UI 3.5_0
       rect:
         serializedVersion: 2
-        x: 144
+        x: 129
         y: 2679
         width: 871
         height: 1055
@@ -163,7 +163,7 @@ TextureImporter:
       name: UI 3.5_2
       rect:
         serializedVersion: 2
-        x: 1447
+        x: 1432
         y: 2679
         width: 871
         height: 1055
