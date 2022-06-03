@@ -121,12 +121,12 @@ TextureImporter:
       name: UI 6_0
       rect:
         serializedVersion: 2
-        x: 685
+        x: 458
         y: 2019
-        width: 2625
+        width: 3082
         height: 607
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
