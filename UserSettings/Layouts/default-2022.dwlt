@@ -273,8 +273,8 @@ MonoBehaviour:
     y: 0
     width: 279
     height: 767
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 21}
@@ -411,23 +411,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: a2abfffff8abffff56aefffffebeffff32fbffff285a00005c5f00000e6100003c61000032620000
+      m_SelectedIDs: da320100
+      m_LastClickedID: 78554
+      m_ExpandedIDs: 4429ffff9a29fffff82bffff1081ffff9e82ffffd487ffffeaafffff9eb6ffff14e6ffff32fbffff285a000020610000326100004462000026390100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Image (1)
-        m_OriginalName: Image (1)
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 23984
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 8}
       m_SearchString: 
@@ -695,9 +695,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1160.6119, y: 571.2829, z: -54.764072}
+    m_Target: {x: 1103.3805, y: 620.965, z: 6.0080986}
     speed: 2
-    m_Value: {x: 1171.711, y: 556.6661, z: -55.050957}
+    m_Value: {x: 1061.0894, y: 630.743, z: 6.2918386}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -747,9 +747,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 608.81866
+    m_Target: 658.9091
     speed: 2
-    m_Value: 637.5065
+    m_Value: 630.53503
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -822,7 +822,7 @@ MonoBehaviour:
   m_suppressRenderingForFullscreen: 0
   m_SimulatorState:
     controlPanelVisible: 0
-    controlPanelWidth: 0
+    controlPanelWidth: NaN
     controlPanelFoldoutKeys:
     - UnityEditor.DeviceSimulation.ApplicationSettingsPlugin
     controlPanelFoldoutValues: 00
@@ -948,9 +948,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 114}
-    m_SelectedIDs: 84640000
-    m_LastClickedID: 25732
-    m_ExpandedIDs: 0000000080640000826400008464000000ca9a3bffffff7f
+    m_SelectedIDs: 96640000
+    m_LastClickedID: 25750
+    m_ExpandedIDs: 0000000092640000946400009664000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -978,7 +978,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000806400008264000084640000
+    m_ExpandedIDs: 00000000926400009464000096640000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1006,7 +1006,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000000000000a5b0000be850000ac5d0000826200009abb0000
+    m_ExpandedInstanceIDs: c6230000000000000a5b0000be850000ac5d0000826200009abb00007c630000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1092,7 +1092,7 @@ MonoBehaviour:
     m_SaveData: []
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 103462
+  m_LastSelectedObjectID: -4258
 --- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52
