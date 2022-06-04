@@ -432,6 +432,153 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: UI 4_15
+      rect:
+        serializedVersion: 2
+        x: 2586
+        y: 42
+        width: 327
+        height: 606
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b3f1b817826c714689a67c0b82c2a68
+      internalID: -1243976249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI 4_16
+      rect:
+        serializedVersion: 2
+        x: 2178
+        y: 42
+        width: 327
+        height: 606
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eb8324cf49c6034a9cca36b6d5b7c4c
+      internalID: -356425991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI 4_17
+      rect:
+        serializedVersion: 2
+        x: 2444
+        y: 1039
+        width: 206
+        height: 414
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e327b3ac239915142a7a0c169a76e790
+      internalID: 2081110471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI 4_18
+      rect:
+        serializedVersion: 2
+        x: 1912
+        y: 1061
+        width: 290
+        height: 290
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cce9a82a74ffa0c46a47a3b42aa0a480
+      internalID: -1351650553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI 4_19
+      rect:
+        serializedVersion: 2
+        x: 1610
+        y: 1059
+        width: 290
+        height: 290
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1526f2c0ac2d94941b36e26b9124b565
+      internalID: -603849333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI 4_20
+      rect:
+        serializedVersion: 2
+        x: 1304
+        y: 1059
+        width: 290
+        height: 290
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcc9c53ffe4d96e49b8e57102ede8f2e
+      internalID: 1616474339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI 4_21
+      rect:
+        serializedVersion: 2
+        x: 2702
+        y: 1039
+        width: 206
+        height: 414
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30d8b2fbd457e4c4b8aeced26a3b76af
+      internalID: 2009676147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -448,16 +595,23 @@ TextureImporter:
       UI 4_3: 1504488987
       UI 4_0: -1958342997
       UI 4_8: 1942323017
+      UI 4_20: 1616474339
       UI 4_6: 2056158288
+      UI 4_19: -603849333
       UI 4_1: 277673752
       UI 4_10: -1336552687
       UI 4_14: 1493702181
+      UI 4_18: -1351650553
+      UI 4_16: -356425991
       UI 4_5: 1679370054
       UI 4_4: -1385508993
       UI 4_2: 1521676710
       UI 4_7: -1730887386
       UI 4_13: 771054403
+      UI 4_21: 2009676147
       UI 4_11: 1000456972
+      UI 4_15: -1243976249
+      UI 4_17: 2081110471
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 
