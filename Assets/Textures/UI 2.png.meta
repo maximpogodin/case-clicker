@@ -121,10 +121,10 @@ TextureImporter:
       name: UI 2_5
       rect:
         serializedVersion: 2
-        x: 202
+        x: 214
         y: 602
-        width: 572
-        height: 571
+        width: 545
+        height: 545
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,6 +176,27 @@ TextureImporter:
       bones: []
       spriteID: 5a4c87ba842282a49a7d4fb76ad927d7
       internalID: -1273423133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI 2_1
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 62
+        width: 545
+        height: 545
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a51d49a1265963f4cbafbd7d93c22793
+      internalID: -905098407
       vertices: []
       indices: 
       edges: []
