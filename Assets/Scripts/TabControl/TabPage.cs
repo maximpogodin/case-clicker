@@ -8,12 +8,25 @@ public class TabPage : MonoBehaviour
     private bool _isAnimated;
     public bool IsStartPage;
 
+    [SerializeField]
+    private BackpackAnimator _backpackAnimator; 
+
     private void Awake()
     {
         if (_isAnimated)
             animator = GetComponent<Animator>();
 
         IsShowed = false;
+    }
+
+    private void OnDisable()
+    {
+        _backpackAnimator.PlayAnimation();
+    }
+
+    private void OnEnable()
+    {
+        _backpackAnimator.PlayAnimation();
     }
 
     public void ShowOrHidePage()

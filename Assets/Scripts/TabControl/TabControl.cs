@@ -11,8 +11,8 @@ public class TabControl : MonoBehaviour
 
     private void Awake()
     {
-        if (GetComponent<Button>() != null)
-            GetComponent<Button>().onClick.AddListener(Close);
+        //if (GetComponent<Button>() != null)
+        //    GetComponent<Button>().onClick.AddListener(Close);
 
         for (int i = 0; i < tabPages.Length; i++)
         {
