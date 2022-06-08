@@ -27,7 +27,13 @@ Material:
         m_Texture: {fileID: 2800000, guid: 53669fff8cb97b04cb8b97bf59e14803, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 2800000, guid: 570f8daee6a42e947b05625a90c551c5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Ints: []
-    m_Floats: []
-    m_Colors: []
+    m_Floats:
+    - _OcclusionStrength: 0.25
+    m_Colors:
+    - _SpecColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
