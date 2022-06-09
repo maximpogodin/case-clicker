@@ -269,9 +269,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4223
-        y: 3363
+        y: 3329
         width: 655
-        height: 523
+        height: 557
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -474,6 +474,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: UI_17
+      rect:
+        serializedVersion: 2
+        x: 3044
+        y: 3329
+        width: 1118
+        height: 557
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f8c7281bc477eb488748cc803bcda3c
+      internalID: 838293243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -497,6 +518,7 @@ TextureImporter:
       UI_7: 761979132
       UI_16: 1760427319
       UI_15: 1360516831
+      UI_17: 838293243
       UI_14: 414276394
       UI_10: -720558393
       UI_8: -853916091
