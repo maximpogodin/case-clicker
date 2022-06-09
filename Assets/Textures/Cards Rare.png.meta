@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 41c7fcda9eccab54aa31b677ce163669
+guid: 8315c90316db75748b4134dc6d39e9f4
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -118,43 +118,64 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Shop Button_0
+      name: Cards Rare_0
       rect:
         serializedVersion: 2
-        x: 1675
-        y: 2413
-        width: 2213
-        height: 489
+        x: 32
+        y: 1340
+        width: 594
+        height: 826
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b01642693d2a93499e1a2a0d7b57236
-      internalID: -897958361
+      spriteID: 209c844fe4bde0b4d9f3ceb2c59cf01e
+      internalID: -1199847463
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shop Button_1
+      name: Cards Rare_1
       rect:
         serializedVersion: 2
-        x: 202
-        y: 159
-        width: 2009
-        height: 1499
+        x: 662
+        y: 1340
+        width: 594
+        height: 826
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ce6cf7b00788ff44a707591e4c4e500
-      internalID: 818221680
+      spriteID: 4b2db79f0a6824c408096049f653891f
+      internalID: 2028203723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cards Rare_2
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 1340
+        width: 594
+        height: 826
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7c19aefb854b0946882cae843a3cdaf
+      internalID: -1609193934
       vertices: []
       indices: 
       edges: []
@@ -162,7 +183,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 7c8243ec6a180684e878352e1a03d05b
+    spriteID: 06a051d3e9b33fa4d815427b4412b865
     internalID: 0
     vertices: []
     indices: 
@@ -170,8 +191,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Shop Button_1: 818221680
-      Shop Button_0: -897958361
+      Cards Rare_2: -1609193934
+      Cards Rare_0: -1199847463
+      Cards Rare_1: 2028203723
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 
