@@ -212,10 +212,17 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Dust_8: -590770681
+      Dust_4: 989408609
+      Dust_7: 1774626897
       Dust_1: 932659559
+      Dust_6: 200328108
       Dust_3: -842317586
+      Dust_9: 707414965
+      Dust_10: 1115021240
       Dust_0: -1218992944
       Dust_2: 1783026098
+      Dust_5: 200650974
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 

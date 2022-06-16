@@ -4332,7 +4332,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 48a83b5b416035d488fe43915d339c21, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: b407c7a60527a094a9e8e091b3ba89cc, type: 2}
+      objectReference: {fileID: 2100000, guid: 4b532731e40f0324690ede975c6c61da, type: 2}
     - target: {fileID: 919132149155446097, guid: 48a83b5b416035d488fe43915d339c21, type: 3}
       propertyPath: m_Name
       value: Card package
@@ -13487,7 +13487,7 @@ MonoBehaviour:
   Amount: 1
   TintColor: {r: 1, g: 1, b: 1, a: 1}
   Hue: 0
-  Saturation: 0.1
+  Saturation: 0.2
   Brightness: 0
   Contrast: 0.1
   Sharpness: 0.15
@@ -18002,7 +18002,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1.2
+  m_Intensity: 1.25
   m_Range: 20
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -26394,7 +26394,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 48a83b5b416035d488fe43915d339c21, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: b407c7a60527a094a9e8e091b3ba89cc, type: 2}
+      objectReference: {fileID: 2100000, guid: f28551a97d2c0634a96623103bcbffad, type: 2}
     - target: {fileID: 919132149155446097, guid: 48a83b5b416035d488fe43915d339c21, type: 3}
       propertyPath: m_Name
       value: Card package (9)
@@ -26664,7 +26664,7 @@ Animator:
   m_GameObject: {fileID: 1753520119}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 994baa34ebe77c14595c1e56a2649afa, type: 2}
+  m_Controller: {fileID: 9100000, guid: 4fcc97dad801ffd47839c718f2e89eb5, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -28227,7 +28227,7 @@ MonoBehaviour:
   Amount: 1
   TintColor: {r: 1, g: 1, b: 1, a: 1}
   Hue: 0
-  Saturation: 0.1
+  Saturation: 0.2
   Brightness: 0
   Contrast: 0.1
   Sharpness: 0.15
