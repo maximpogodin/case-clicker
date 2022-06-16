@@ -685,8 +685,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 49358778}
-  m_LocalRotation: {x: 0.22047824, y: -0.0071937754, z: -0.0014474661, w: -0.9753643}
-  m_LocalPosition: {x: -1.8336641, y: -8.675145, z: -12.353673}
+  m_LocalRotation: {x: -0.0718917, y: 0.03532084, z: 0.0025899014, w: 0.9967835}
+  m_LocalPosition: {x: -0.37429094, y: -7.899788, z: -16.15377}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1500,8 +1500,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 110459056}
-  m_LocalRotation: {x: 0.15059254, y: 0.090335555, z: 0.013856393, w: -0.9843624}
-  m_LocalPosition: {x: -1.1239293, y: -6.804195, z: -9.466463}
+  m_LocalRotation: {x: -0.27085304, y: 0.14383584, z: 0.04109282, w: 0.95092654}
+  m_LocalPosition: {x: -2.2917435, y: -12.634041, z: -16.239925}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2870,12 +2870,20 @@ PrefabInstance:
       value: 4.566
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 6913f3499a901484991cef7a9498c60b, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 6913f3499a901484991cef7a9498c60b, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: cc79110b5d074564cb14ed4bbaa4789f, type: 2}
     - target: {fileID: 919132149155446097, guid: 6913f3499a901484991cef7a9498c60b, type: 3}
       propertyPath: m_Name
       value: Water Star (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6913f3499a901484991cef7a9498c60b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -13327,6 +13335,7 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194230}
+  - component: {fileID: 963194231}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -13413,6 +13422,26 @@ MonoBehaviour:
   Brightness: 0
   Contrast: 0.1
   Sharpness: 0.15
+--- !u!95 &963194231
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a6658e0638a16fb45b8e386024400eca, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &963765762
 GameObject:
   m_ObjectHideFlags: 0
@@ -19387,15 +19416,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8f72e2f24b4b5164bb62e690689c9f21, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1466.1106
+      value: 1142.1442
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8f72e2f24b4b5164bb62e690689c9f21, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1466.1106
+      value: 1142.1442
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8f72e2f24b4b5164bb62e690689c9f21, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1466.1106
+      value: 1142.1442
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8f72e2f24b4b5164bb62e690689c9f21, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19407,7 +19436,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8f72e2f24b4b5164bb62e690689c9f21, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.700001
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8f72e2f24b4b5164bb62e690689c9f21, type: 3}
       propertyPath: m_LocalRotation.w
@@ -28218,7 +28247,7 @@ MonoBehaviour:
   Amount: 1
   TintColor: {r: 1, g: 1, b: 1, a: 1}
   Hue: 0
-  Saturation: 0.2
+  Saturation: 0.3
   Brightness: 0
   Contrast: 0.1
   Sharpness: 0.15
