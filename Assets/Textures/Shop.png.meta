@@ -159,6 +159,48 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Shop_2
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 16
+        width: 550
+        height: 550
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c9f411b6d6709a44b6b50b14cfb8cb0
+      internalID: 1906427859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shop_3
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 30
+        width: 550
+        height: 550
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 428376f680b091e4db4e53a2eb4f0864
+      internalID: -1066394269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -172,6 +214,8 @@ TextureImporter:
     nameFileIdTable:
       Shop_0: 559609394
       Shop_1: -1314672169
+      Shop_3: -1066394269
+      Shop_2: 1906427859
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 
