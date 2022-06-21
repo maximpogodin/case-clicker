@@ -670,8 +670,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 49358778}
-  m_LocalRotation: {x: -0.04361941, y: 0, z: 0, w: 0.99904823}
-  m_LocalPosition: {x: -49.83, y: -35.55, z: -38.244}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 566.5952, y: -245.80298, z: -548.2921}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1562,7 +1562,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 110459056}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 675.2927, y: -298.3427, z: -781.96936}
+  m_LocalPosition: {x: 724.4833, y: -334.4443, z: -642.2319}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10519,6 +10519,7 @@ GameObject:
   - component: {fileID: 670680298}
   - component: {fileID: 670680300}
   - component: {fileID: 670680299}
+  - component: {fileID: 670680301}
   m_Layer: 5
   m_Name: Backgroudn
   m_TagString: Untagged
@@ -10544,7 +10545,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 6000.0005, y: 3000.0002}
+  m_SizeDelta: {x: 6017.9, y: 3008.968}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &670680299
 MonoBehaviour:
@@ -10584,6 +10585,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 670680297}
   m_CullTransparentMesh: 1
+--- !u!95 &670680301
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670680297}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2706228d74de42443821c1a87e3b5c07, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &674670444
 GameObject:
   m_ObjectHideFlags: 0
@@ -24580,7 +24601,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 27, y: 0}
   m_SizeDelta: {x: 1819.9999, y: 755.2727}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1580062069
