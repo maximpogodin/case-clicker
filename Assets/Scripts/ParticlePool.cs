@@ -1,22 +1,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TextParticlePool : MonoBehaviour
+[System.Serializable]
+public class ParticlePool : MonoBehaviour
 {
-    public static TextParticlePool SharedInstance;
-    public List<TextParticle> pooledObjects;
-    public TextParticle objectToPool;
+    public List<Particle> pooledObjects;
+    public Particle objectToPool;
     public int amountToPool;
-
-    void Awake()
-    {
-        SharedInstance = this;
-    }
 
     void Start()
     {
-        pooledObjects = new List<TextParticle>();
-        TextParticle tmp;
+        pooledObjects = new List<Particle>();
+        Particle tmp;
+
         for (int i = 0; i < amountToPool; i++)
         {
             tmp = Instantiate(objectToPool);
@@ -25,7 +21,7 @@ public class TextParticlePool : MonoBehaviour
         }
     }
 
-    public TextParticle GetPooledObject()
+    public Particle GetPooledObject()
     {
         for (int i = 0; i < amountToPool; i++)
         {
@@ -34,6 +30,7 @@ public class TextParticlePool : MonoBehaviour
                 return pooledObjects[i];
             }
         }
+
         return null;
     }
 }

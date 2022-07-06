@@ -30,6 +30,9 @@ public class ClickerObject : MonoBehaviour, IPointerClickHandler
     [SerializeField]
     private Text _comboText;
 
+    public ParticlePool _dustPool;
+    public ParticlePool _textPool;
+
     private void Awake() 
     {
         _mainCamera = Camera.main;
@@ -39,7 +42,7 @@ public class ClickerObject : MonoBehaviour, IPointerClickHandler
 
     private void Start()
     {
-        _textParticlePosition = _mainCamera.WorldToScreenPoint(_textParticleTransform.position);
+        _textParticlePosition = _textParticleTransform.position;
     }
 
     public void IncreaseMultiplier(float value)
@@ -59,38 +62,32 @@ public class ClickerObject : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        float randomSize = Random.RandomRange(0.5f, 1f);
-        Vector3 randomScale = new Vector3(randomSize, randomSize, randomSize);
-
-        TextParticle textParticle = TextParticlePool.SharedInstance.GetPooledObject();
-        if (textParticle != null)
+        Particle dustObj = _dustPool.GetPooledObject();
+        if (dustObj != null)
         {
-            textParticle.transform.parent = _textParticleParent;
-            textParticle.transform.position = _textParticlePosition;
-            textParticle.transform.rotation = Quaternion.identity;
-            textParticle.gameObject.transform.localScale = randomScale;
-            textParticle.ShowTextParticle();
-            textParticle.UpdateText(ValueFormatter.GetFormattedValue(Click.ClickPower * Click.ClickMultiplier));
+            Vector3 randomPosition = new Vector3(Random.Range(-50f, 50f), Random.Range(-50f, 50f));
+            dustObj.transform.parent = _textParticleParent;
+            dustObj.transform.position = _textParticlePosition + randomPosition;
+            dustObj.SetAsFirst();
+            dustObj.gameObject.SetActive(true);
         }
 
-        //var particleClone = Instantiate(particlePrefab, particlePosition, Quaternion.identity);
-        //particleClone.GetComponent<Rigidbody>().AddForce(randomPosition * particleDropForce);
-        //Destroy(particleClone, 1f);
+        Particle textObj = _textPool.GetPooledObject();
+        if (textObj != null)
+        {
+            Vector3 randomPosition = new Vector3(Random.Range(-50f, 50f), Random.Range(-50f, 50f));
+            float randomSize = Random.Range(0.5f, 1f);
+            Vector3 randomScale = new Vector3(randomSize, randomSize, randomSize);
 
-        //var clickParticleClone = Instantiate(_clickParticlePrefab, _parent);
-        //clickParticleClone.transform.position = eventData.position;
-
-        //Rigidbody2D rb = clickParticleClone.GetComponent<Rigidbody2D>();
-        //rb.AddForce(randomPosition * textClickDropForce);
-        //rotation = randomPosition.x <= 0f ? rotation : -rotation;
-        //rb.AddTorque(rotation);
-
-        //clickParticleClone.transform.SetAsFirstSibling();
-        //clickParticleClone.transform.localScale = randomScale;
-
-        //clickParticleClone.GetComponent<ClickParticle>().UpdateText((_click.ClickPower * _click.ClickMultiplier).ToString("f1"));
-
-        //Destroy(clickParticleClone.gameObject, 1f);
+            textObj.transform.parent = _textParticleParent;
+            textObj.transform.position = _textParticlePosition + randomPosition;
+            textObj.transform.rotation = Quaternion.identity;
+            textObj.gameObject.transform.localScale = randomScale;
+            textObj.SetAsFirst();
+            textObj.gameObject.SetActive(true);
+            (textObj as TextParticle).ShowTextParticle();
+            (textObj as TextParticle).UpdateText(ValueFormatter.GetFormattedValue(Click.ClickPower * Click.ClickMultiplier));
+        }
 
         _clickProgression.IncreaseSlider(Click.ClickPower);
         _gameManager.IncreaseResourceValue(ResourceType.Stone, Click.ClickPower * Click.ClickMultiplier);

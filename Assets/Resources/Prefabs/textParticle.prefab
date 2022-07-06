@@ -91,7 +91,7 @@ GameObject:
   - component: {fileID: 8019489644802417105}
   - component: {fileID: 9203725712082917850}
   m_Layer: 5
-  m_Name: textParticle
+  m_Name: TextParticle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

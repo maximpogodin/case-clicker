@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TextParticle : MonoBehaviour
+public class TextParticle : Particle
 {
     [SerializeField]
     private Text _text;
@@ -40,17 +40,9 @@ public class TextParticle : MonoBehaviour
 
     public void ShowTextParticle()
     {
-        gameObject.SetActive(true);
-        transform.SetAsFirstSibling();
         animator.SetBool("Show", true);
 
         AddForce();
         AddTorque();
-    }
-
-    public void HideTextParticle()
-    {
-        animator.SetBool("Show", false);
-        gameObject.SetActive(false);
     }
 }
