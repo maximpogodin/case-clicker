@@ -243,6 +243,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Runs_6
+      rect:
+        serializedVersion: 2
+        x: 2490
+        y: 2372
+        width: 565
+        height: 585
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f468ca8014de6ca468b35edaf34ac8a4
+      internalID: -422647661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -258,6 +279,7 @@ TextureImporter:
       Runs_4: 1963720236
       Runs_2: 96204152
       Runs_0: 629533853
+      Runs_6: -422647661
       Runs_5: -2102700853
       Runs_3: 1349861712
   spritePackingTag: 
